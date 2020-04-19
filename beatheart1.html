@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>跳动的心1</title>
+    <style>
+      #heart {
+        max-width: 500px;
+        max-height: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        transition: all 1s;
+      }
+      .left,
+      .right {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 51, 0);
+      }
+      .left {
+        transform: translate(20%, 70%) rotate(-45deg);
+        border-radius: 50% 50% 0 0;
+      }
+      .right {
+        transform: translate(120%, 70%) rotate(45deg);
+        border-radius: 50% 50% 0 0;
+      }
+      .bottom {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        background-color: rgb(255, 51, 0);
+        transform: translate(70%, 120%) rotate(45deg);
+      }
+      #heart:hover {
+        transform: scale(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="heart">
+      <div class="left"></div>
+      <div class="right"></div>
+      <div class="bottom"></div>
+    </div>
+  </body>
+</html>
